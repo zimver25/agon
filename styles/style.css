@@ -3,7 +3,7 @@
 :root {
     --font-family: "WorkSans";
     --second-family: "Merriweather";
-    --menu-hover-color: #006d77;
+    --color-rich-greenish-blue: #006d77;
     --color-black: #101828;
     --color-white: #fff;
     --color-grey: #98a2b3;
@@ -134,7 +134,7 @@ ul {
     line-height: 120%;
     text-align: center;
     color: var(--color-black);
-
+    margin: auto;
 }
 
 .header__title--left {
@@ -253,7 +253,7 @@ ul {
     margin-top: 122px;
 }
 
-.special-menu{
+.special-menu {
     justify-content: space-between;
 }
 
@@ -299,63 +299,137 @@ ul {
     font-weight: 300;
     font-size: 16px;
     line-height: 162%;
-    color: #101828;
+    color: var(--color-black);
 }
+
+.title--reduction-width {
+    margin-top: 100px;
+    width: 455px;
+    margin-bottom: 57px;
+}
+
+.menu {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    gap: 30px;
+    margin: auto;
+}
+
+.menu__content--redesign {
+    padding: 0px 13px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 217%;
+    text-align: center;
+    color: var(--color-rich-greenish-blue);
+    background-color: #BEE1E6;
+    border: none;
+    border-radius: 6px;
+    width: 67px;
+    height: 23px;
+}
+
+.menu__price-and-button {
+    justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 29px;
+}
+
+.menu__content {
+    width: 255px;
+    border: 1px solid #e4e7ec;
+    border-radius: 6px;
+    box-shadow: 0 0 1px 1px rgba(228, 231, 236, 0.15);
+    padding: 10px;
+}
+
+.menu__content-price {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 144%;
+    color: var(--color-rich-greenish-blue);
+}
+
+.menu__content-img {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu__content-title--redesign {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--color-text);
+    text-align: start;
+}
+
+
+
+
 
 
 
 
 @media (hover: hover) {
     .logo:hover {
-        color: var(--menu-hover-color);
+        color: var(--color-rich-greenish-blue);
     }
 
     .navbar__link:hover {
-        color: var(--menu-hover-color);
+        color: var(--color-rich-greenish-blue);
     }
 }
 
 @media (hover: none) {
     .logo:active {
-        color: var(--menu-hover-color);
+        color: var(--color-rich-greenish-blue);
     }
 
     .navbar__link:active {
-        color: var(--menu-hover-color);
+        color: var(--color-rich-greenish-blue);
     }
 }
 
 @media (max-width:1200px) {
-    .header__right-circle1, .header__right-circle2, .header__right-circle3{
+
+    .header__right-circle1,
+    .header__right-circle2,
+    .header__right-circle3 {
         display: none;
     }
 
-    .special__title{
+    .special__title {
         font-size: 14px;
     }
 }
 
 @media (max-width:992px) {
-    .header__title{
+    .header__title {
         font-size: 35px;
         width: 400px;
     }
 
-    .header__right-watch{
+    .header__right-watch {
         width: 69%;
         bottom: 50%;
         right: 10%;
     }
 
-    .header__right-stats{
+    .header__right-stats {
         bottom: -6%;
     }
 
-    .header__title-desc{
+    .header__title-desc {
         width: 397px;
     }
 
-    .special__title{
+    .special__title {
         font-size: 12px;
     }
 }
@@ -373,56 +447,58 @@ ul {
         display: grid;
     }
 
-    .header__right-stats{
+    .header__right-stats {
         bottom: 4%;
         width: 160%;
         right: -22%;
     }
 
-    .header__title-desc{
+    .header__title-desc {
         font-size: 14px;
         width: 300px;
     }
 
-    .header__right-watch{
+    .header__right-watch {
         width: 100%;
         bottom: 44%;
         right: 30%;
     }
 
-    .special-menu{
+    .special-menu {
         flex-wrap: wrap;
     }
 
-    .special__box{
+    .special__box {
         width: 250px;
     }
 
-    .special__box-mobile{
+    .special__box-mobile {
         margin: 15px auto auto auto;
     }
 
-    .special__title{
+    .special__title {
         font-style: 13px;
     }
 }
 
 @media (max-width:576px) {
-    .header__right-watch, .header__right-stats{
+
+    .header__right-watch,
+    .header__right-stats {
         display: none;
     }
 
-    .special-menu{
+    .special-menu {
         justify-content: space-around;
     }
 }
 
 @media (max-width:524px) {
-    .special__box-mobile{
+    .special__box-mobile {
         margin: 0;
     }
 
-    .special__box{
+    .special__box {
         margin-top: 10px;
     }
 }
