@@ -8,6 +8,7 @@
     --color-white: #fff;
     --color-grey: #98a2b3;
     --color-grey-desc: #475467;
+    --color-apricot: #FFDDD2;
 }
 
 * {
@@ -132,6 +133,7 @@ ul {
     line-height: 120%;
     text-align: center;
     color: var(--color-black);
+
 }
 
 .header__title--left {
@@ -151,7 +153,7 @@ ul {
 }
 
 .header__title-desc {
-    width: 522px;
+    width: 521px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -175,24 +177,76 @@ ul {
     margin-bottom: 0;
 }
 
-.header__project-info{
+.header__project-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 10px;
 }
 
-.header__stats-project-worker{
+.header__stats-project-worker {
     margin-left: 42px;
 }
 
-.header__stats{
+.header__stats {
     margin-top: 57px;
 }
 
+.header__content-right {
+    width: 100%;
+    position: relative;
+}
 
+.header__right-watch {
+    position: absolute;
+    right: 22%;
+    bottom: 6%;
+}
 
+.header__right-stats {
+    position: absolute;
+    right: -1.7%;
+    bottom: -10%;
+}
 
+.header__right-circle1,
+.header__right-circle2,
+.header__right-circle3 {
+    position: absolute;
+    display: grid;
+    border-radius: 50%;
+}
 
+.header__right-circle1,
+.header__right-circle3 {
+    width: 49px;
+    height: 49px;
+}
+
+.header__right-circle2 {
+    width: 69px;
+    height: 69px;
+}
+
+.header__right-circle1,
+.header__right-circle2 {
+    background-color: var(--color-apricot);
+}
+
+.header__right-circle3 {
+    background-color: #beffe6d9;
+    right: 24%;
+}
+
+.header__right-circle2 {
+    bottom: 66%;
+    left: 5%;
+}
+
+.header__right-circle1{
+    bottom: 5%;
+    right: 75%;
+}
 
 
 
