@@ -9,6 +9,7 @@
     --color-grey: #98a2b3;
     --color-grey-desc: #475467;
     --color-apricot: #FFDDD2;
+    --color-text: #323a4b;
 }
 
 * {
@@ -243,11 +244,63 @@ ul {
     left: 5%;
 }
 
-.header__right-circle1{
+.header__right-circle1 {
     bottom: 5%;
     right: 75%;
 }
 
+.main {
+    margin-top: 122px;
+}
+
+.special-menu{
+    justify-content: space-between;
+}
+
+.special__box {
+    align-items: center;
+    border: 1px solid #e4e7ec;
+    border-radius: 6px;
+    width: 350px;
+    height: 125px;
+}
+
+.special__pic1 {
+    width: 84px;
+    height: 63px;
+    margin-left: 19px;
+    margin-right: 4px;
+}
+
+.special__pic2 {
+    width: 59px;
+    height: 78px;
+    margin-left: 19px;
+    margin-right: 4px;
+}
+
+.special__pic3 {
+    width: 74px;
+    height: 86px;
+    margin-left: 19px;
+    margin-right: 4px;
+}
+
+.special__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--color-text);
+}
+
+.special__price {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 162%;
+    color: #101828;
+}
 
 
 
