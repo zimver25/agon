@@ -10,12 +10,15 @@
     --color-grey-desc: #475467;
     --color-apricot: #FFDDD2;
     --color-text: #323a4b;
+    --color-border: #d1dae8;
+    --color-Very-very-pale-blue: #E4E7EC;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 3px solid green; */
 }
 
 ul {
@@ -259,7 +262,7 @@ ul {
 
 .special__box {
     align-items: center;
-    border: 1px solid #e4e7ec;
+    border: 1px solid var(--color-Very-very-pale-blue);
     border-radius: 6px;
     width: 350px;
     height: 125px;
@@ -302,7 +305,7 @@ ul {
     color: var(--color-black);
 }
 
-.title--reduction-width {
+.title--custom-setting-1 {
     margin-top: 100px;
     width: 455px;
     margin-bottom: 57px;
@@ -338,7 +341,7 @@ ul {
 
 .menu__content {
     width: 255px;
-    border: 1px solid #e4e7ec;
+    border: 1px solid;
     border-radius: 6px;
     box-shadow: 0 0 1px 1px rgba(228, 231, 236, 0.15);
     padding: 10px;
@@ -367,6 +370,144 @@ ul {
     line-height: 162%;
     color: var(--color-text);
     text-align: start;
+}
+
+.title--custom-setting-2 {
+    margin-top: 115px;
+    margin-bottom: 30px;
+}
+
+.desc--custom-setting-1 {
+    text-align: center;
+    width: 468px;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+.categories__content-left {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    width: 475px;
+    height: 369px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories__left-box {
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-Very-very-pale-blue);
+}
+
+.categories__left-box--remover {
+    border: none;
+}
+
+.categories__stats-num {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    color: #006d77;
+    position: relative;
+}
+
+.categories__stats-num-circle::before {
+    position: absolute;
+    content: '';
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--color-Very-very-pale-blue);
+    left: -9px;
+    top: -3px;
+}
+
+.categories__stats-num-text {
+    position: relative;
+}
+
+.categories__stats-num-circle::before:last-child {
+    left: -12px;
+}
+
+.categories__num-circle-i-hate-last-child::before {
+    left: -12px;
+}
+
+.categories__stats-num-text-i-hate-last-child {
+    padding-right: 3px;
+}
+
+.categories__left-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 87%;
+    color: var(--color-text);
+    margin-bottom: 30px;
+}
+
+.categories__stats {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #667085;
+}
+
+.categories {
+    margin-bottom: 120px;
+    justify-content: space-between;
+}
+
+.categories__right-box {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    width: 285px;
+    height: 96px;
+    padding: 15px;
+    align-items: center;
+}
+
+.categories__right-logo {
+    height: 70%;
+}
+
+.catgeories__right-text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 186%;
+    color: var(--color-text);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.categories__content-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.categories__right-button {
+    border: 1px solid var(--color-border);
+    width: 256px;
+    height: 58px;
+    background-color: var(--color-white);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.categories__right-button span {
+    margin-left: 10px;
 }
 
 
@@ -408,7 +549,7 @@ ul {
         font-size: 14px;
     }
 
-    .menu{
+    .menu {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -437,7 +578,7 @@ ul {
         font-size: 12px;
     }
 
-    .menu{
+    .menu {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -492,11 +633,11 @@ ul {
         font-style: 13px;
     }
 
-    .menu{
+    .menu {
         gap: 15px;
     }
 
-    .title--reduction-width{
+    .title--custom-setting-1 {
         width: 330px;
         font-size: 30px;
     }
@@ -513,7 +654,7 @@ ul {
         justify-content: space-around;
     }
 
-    .menu{
+    .menu {
         grid-template-columns: repeat(1, 1fr);
     }
 }
