@@ -4,11 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <title>Agon</title>
 </head>
 
 <body>
-    <p class="hi">hiihihihihihihihihihihihihihi</p>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo navbar__logo"><img src="../images/logo.png" alt=""><span>agon</span></a>
+            <ul class="list navbar__list navbar__list--add-space-between">
+                <li class="navbar__item"><a href="../index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Company</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Pages</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Blog</a></li>
+                <li class="navbar__item"><a href="card.html" class="navbar__link">card</a></li>
+            </ul>
+            <div class="dropdown navbar__menu-mobile">
+                <button class="btn btn-secondary dropdown-toggle navbar__menu-mobile-button" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item navbar__link" href="../index.html">Home</a></li>
+                    <li><a class="dropdown-item navbar__link" href="#">About</a></li>
+                    <li><a class="dropdown-item navbar__link" href="#">Company</a></li>
+                    <li><a class="dropdown-item navbar__link" href="#">Pages</a></li>
+                    <li><a class="dropdown-item navbar__link" href="#">Blog</a></li>
+                    <li><a class="dropdown-item navbar__link" href="card.html">card</a></li>
+                </ul>
+            </div>
+            <!-- rounding - this is when the rounding increases; for example button border-radius: 10px; go to border-radius: 30px;-->
+            <button class="button navbar__button navbar__button--rounding" type="button">Get Started</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-item">
+            <div class="card__content d-flex">
+                <div class="card__left">
+                    <img src="../images/product10.png" alt="" class="card__left-pic">
+                    <div class="card__left-box">
+                        <h2 class="card__left-title"></h2>
+                        <p class="card__left-desc"></p>
+                        <div class="card__left-button-box d-flex"><button
+                                class="button card__left-button-minus"></button><input type="number"
+                                class="card__left-input"><button class="button card__left-button-plus"></button></div>
+                    </div>
+                </div>
+                <div class="card__right">
+                    <p class="card__right-price"></p>
+                    <button class="button card__right-button" type="button"><img src="../vectors/trash.svg"
+                            alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>

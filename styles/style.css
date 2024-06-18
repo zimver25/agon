@@ -755,6 +755,16 @@ ul {
     background-color: var(--color-white);
 }
 
+.card-item{
+    margin-top: 50px;
+    background-color: var(--color-border);
+    border-radius: 30px;
+    padding: 20px;
+    height: 500px;
+}
+
+.card__
+
 
 
 

@@ -7,6 +7,7 @@ let shop = {
     priceClassName: `.menu__content-price`,
     buttonClassName: `.menu__content--redesign`,
     formClassName: `.menu__content-form`,
+    cardClassName:  `.card`, 
 }
 
 let items = {}
@@ -28,5 +29,6 @@ shop.buttonHtmlElement.forEach(i => {
             button.type = `submit`;
         };
         setTimeout(createLink, 100);
+        insertAdjacentHTML(`beforeend`, ``)
     });
 });
